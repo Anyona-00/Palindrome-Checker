@@ -10,10 +10,12 @@ function cleanInput(str) {
     return cleanStr.toLowerCase();
 }
 
+
 // Check if the string is a palindrome
 function isPalindrome(str) {
     return str === str.split('').reverse().join('');
 }
+
 
 // Function to handle the palindrome check
 function palindromeChecker() {
@@ -23,6 +25,7 @@ function palindromeChecker() {
         alert('Please input a value');
         return;
     }
+
     
     // Clean the input
     const cleanedAndNormalizedStr = cleanInput(inputString);
@@ -34,6 +37,8 @@ function palindromeChecker() {
         resultDiv.textContent = `${inputString} is not a palindrome.`;
     }
 }
+
+
 
 // Event listener for the check button
 checkButton.addEventListener('click', palindromeChecker);
